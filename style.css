@@ -3,41 +3,33 @@
   padding: 0;
   font-family: sans-serif;
   color: #d6d6d6;
-  place-content: center;
 }
 a {
   text-decoration: none;
 }
 
 body {
+  min-height: 100vh;
   display: grid;
   grid-template:
-    "header" 1fr
-    "main" 1fr
-    "footer" 1fr /
-    1fr;
+  "header" auto
+  "main" 1fr
+  "footer" auto/
+  1fr
 }
 
 .header {
-  grid-area: header;
   background-color: #313132;
+}
+
+.menu-bar-list {
   display: grid;
   grid-auto-flow: column;
   place-content: center;
-}
-.menu-bar {
-  display: grid;
-  grid-auto-flow: column;
   list-style: none;
   gap: 2rem;
   place-items: center;
   padding: 1rem;
-}
-.list.item {
-}
-
-.link-nav-bar {
-  text-decoration: none;
 }
 
 .apple-logo {
@@ -51,13 +43,14 @@ body {
 }
 
 .main {
-  grid-area: main;
-  background-color: burlywood;
   display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(129, 136, 151);
 }
 
 .footer {
   grid-area: footer;
   background-color: tomato;
   display: grid;
+  grid-template-columns: 1fr;
 }

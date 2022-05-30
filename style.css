@@ -24,6 +24,9 @@ ul {
 
 .header {
   background-color: #313132;
+  position: sticky;
+  top: 0;
+  backdrop-filter: 10px;
 }
 
 .menu-bar-list {
@@ -33,7 +36,7 @@ ul {
   list-style: none;
   gap: 2rem;
   place-items: center;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 .list-item a {
   color: #d6d6d6;
@@ -56,22 +59,21 @@ ul {
 }
 
 .main-div {
-  background-image: url(./images/hero_endframe__3tq53uan9teq_small_2x.jpg);
-
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  height: 500px;
-  background-color: #fbfbfd;
+  background-image: url(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-13-pro-202203_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1645052290458);
+background-size: 800px;
+background-position: center bottom;
+background-repeat: no-repeat;
+height: 800px;
+  background-color: #ffffff;
   display: grid;
   padding: 1rem;
-  gap: 1rem;
-
-
+  align-content: start;
+  gap: 0.5rem;
 }
 .main-section {
   text-align: center;
   place-content: center;
-  place-items: center;
+
 }
 
 .main-nav-list {
@@ -106,9 +108,62 @@ ul {
 }
 
 .main-subtitle {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 2rem;
 }
+
+
+
+
+.second-main{
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-se-gallery1-thumb-202203?wid=406&hei=240&fmt=jpeg&qlt=90&.v=1644977439052);
+  background-size: 800px;
+background-position: center bottom;
+background-repeat: no-repeat;
+height: 550px;
+  background-color: #ffffff;
+  display: grid;
+  padding: 1rem;
+  align-content: start;
+
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-second-section {
+  text-align: center;
+  place-content: center;
+}
+
+.main-second-nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-second-nav-link {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  text-decoration: none;
+  color: #06c;
+  font-size: 1.3rem;
+}
+
+.main-second-title {
+  font-size: 3.5rem;
+}
+
+.main-second-subtitle {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+
+
+
 
 .footer {
   grid-area: footer;

@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-ul{
+ul {
   list-style: none;
 }
 
@@ -53,19 +53,28 @@ ul{
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: rgb(129, 136, 151);
 }
 
-.main-div{
+.main-div {
+  background-image: url(./images/hero_endframe__3tq53uan9teq_small_2x.jpg);
+
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-color: #fbfbfd;
+  display: grid;
   padding: 1rem;
+  gap: 1rem;
+
+
 }
 .main-section {
   text-align: center;
   place-content: center;
   place-items: center;
-  }
+}
 
-  .main-nav-list{
+.main-nav-list {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -77,31 +86,29 @@ ul{
   grid-auto-flow: column;
   align-items: center;
   text-decoration: none;
-  color:#06c;
+  color: #06c;
+  font-size: 1.3rem;
 }
-
-
-
-
 
 .main-header1 {
   display: grid;
   grid-auto-flow: column;
   background-color: #f5f5f7;
   padding: 0.7rem;
- 
-
 }
 
-.main-header-link{
-  color:#06c;
+.main-header-link {
+  color: #06c;
 }
 
-.main-title{
-  font-size: 3rem
+.main-title {
+  font-size: 3.5rem;
 }
 
-
+.main-subtitle {
+  font-weight: 400;
+  font-size: 2rem;
+}
 
 .footer {
   grid-area: footer;

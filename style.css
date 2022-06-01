@@ -34,6 +34,7 @@ ul {
   position: sticky;
   top: 0;
   backdrop-filter: 50px;
+  z-index: 30;
 }
 
 .menu-bar-list {
@@ -274,10 +275,9 @@ ul {
   justify-content: center;
   align-content: start;
   text-align: center;
-  padding: 0.5rem;
   text-align: center;
   gap: 0.5rem;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 .h3-article2 {
@@ -309,7 +309,7 @@ ul {
   justify-content: center;
   align-content: start;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
   gap: 0.5rem;
 }
 
@@ -348,7 +348,7 @@ ul {
   justify-content: center;
   align-content: start;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
   gap: 0.5rem;
 }
 
@@ -433,7 +433,7 @@ ul {
   position: fixed;
   top: 8px;
   left: 10px;
-  z-index: 30;
+  z-index: 40;
 
   appearance: none;
   display: none;
@@ -456,6 +456,9 @@ ul {
   height: 50px;
   transition: 1s;
   background-color: #313132;
+  z-index: 30;
+  position: sticky;
+  top: 0;
 }
 
 .header-grid-menu {
@@ -487,10 +490,11 @@ ul {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1025px) {
   .article-grid-section {
     grid-template-columns: 1fr;
     padding: 0.5rem 0;
+    grid-auto-rows: 600px;
   }
 }
 
